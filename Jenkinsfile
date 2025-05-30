@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Kushal-12-oss/m1.git
+                git branch: 'master', url: 'https://github.com/Kushal-12-oss/m1.git'
 '
             }
         }
@@ -30,7 +30,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'java -jar target/MyMaven-1.0-SNAPSHOT.jar'
+                sh 'java -jar target/MyMavenJenkinsPipeline-1.0-SNAPSHOT.jar'
             }
         }
 
