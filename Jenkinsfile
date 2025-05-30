@@ -8,7 +8,6 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'master', url: 'https://github.com/Kushal-12-oss/m1.git'
-'
             }
         }
 
